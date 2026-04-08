@@ -1,0 +1,80 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        // MD3 Indigo palette from Stitch design system
+        "primary": "#24389c",
+        "primary-container": "#3f51b5",
+        "primary-fixed": "#dee0ff",
+        "primary-fixed-dim": "#bac3ff",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#cacfff",
+        "on-primary-fixed": "#00105c",
+        "on-primary-fixed-variant": "#293ca0",
+        "inverse-primary": "#bac3ff",
+
+        "secondary": "#4858ab",
+        "secondary-container": "#96a5ff",
+        "secondary-fixed": "#dee0ff",
+        "secondary-fixed-dim": "#bac3ff",
+        "on-secondary": "#ffffff",
+        "on-secondary-container": "#27378a",
+        "on-secondary-fixed": "#00105b",
+        "on-secondary-fixed-variant": "#2f3f92",
+
+        "tertiary": "#6c3400",
+        "tertiary-container": "#8f4700",
+        "tertiary-fixed": "#ffdcc6",
+        "tertiary-fixed-dim": "#ffb784",
+        "on-tertiary": "#ffffff",
+        "on-tertiary-container": "#ffc7a2",
+        "on-tertiary-fixed": "#301400",
+        "on-tertiary-fixed-variant": "#713700",
+
+        "error": "#ba1a1a",
+        "error-container": "#ffdad6",
+        "on-error": "#ffffff",
+        "on-error-container": "#93000a",
+
+        "background": "#f8f9fa",
+        "on-background": "#191c1d",
+        "surface": "#f8f9fa",
+        "surface-bright": "#f8f9fa",
+        "surface-dim": "#d9dadb",
+        "surface-tint": "#4355b9",
+        "surface-variant": "#e1e3e4",
+        "surface-container": "#edeeef",
+        "surface-container-low": "#f3f4f5",
+        "surface-container-high": "#e7e8e9",
+        "surface-container-highest": "#e1e3e4",
+        "surface-container-lowest": "#ffffff",
+        "on-surface": "#191c1d",
+        "on-surface-variant": "#454652",
+
+        "outline": "#757684",
+        "outline-variant": "#c5c5d4",
+        "inverse-surface": "#2e3132",
+        "inverse-on-surface": "#f0f1f2",
+      },
+      fontFamily: {
+        headline: ["Manrope", "sans-serif"],
+        body: ["Inter", "sans-serif"],
+        label: ["Inter", "sans-serif"],
+      },
+      borderRadius: {
+        DEFAULT: "0.25rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+      },
+    },
+  },
+  plugins: [],
+}

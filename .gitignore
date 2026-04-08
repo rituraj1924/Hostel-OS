@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production / Build
+dist/
+build/
+.next/
+.nuxt/
+out/
+public/mockServiceWorker.js
+
+# Environment / Secret Keys (API Keys, Secrets)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+# Storage / Data / Uploads
+uploads/
+storage/
+temp/
+tmp/
+*.sqlite
+*.db
+sessions/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System / IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# AI / Agents
+.agent/
+.agents/
+.planning/
+.gemini/
