@@ -89,7 +89,7 @@ export default function Documents() {
 
   const handleDownload = async (doc) => {
     try {
-      const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+      const API_BASE = import.meta.env.VITE_API_URL || 'https://hostel-os-gs72.onrender.com/api'
       const token = localStorage.getItem('shms_token')
       const res = await fetch(`${API_BASE}/documents/${doc._id}/download`, { headers: { Authorization: `Bearer ${token}` } })
       const blob = await res.blob()
